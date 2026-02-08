@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>11122026</title>
+		<link rel="icon" type="image/png" href="Icon_Tab.png">
+		<link rel="stylesheet" href="style_as_i_have_written.css">		
+	</head>
+	<body>
+		<div class="vhs-static"></div>
+		<center>
+
+			<div class="large-separation"></div>
+
+			<div id="countdown">
+			<h3> <span id="days">0</span> Days </h3>
+			<h3> <span id="hours">0</span> Hours </h3>
+			<h3> <span id="minutes">0</span> Minutes </h3>
+			<h3> <span id="seconds">0</span> Seconds </h3>
+			</div>
+			<script src="countdown.js"></script>
+
+			<div class="large-separation"></div>
+			
+		</center>
+			<audio id="morse-audio" preload="auto" loop>
+				<source src="NewPage-Cdk3jmGc.mp3" type="audio/mpeg">
+			</audio>
+		<script>
+    			window.addEventListener("click", () => {
+       			document.getElementById("morse-audio").play();
+   			});
+		</script>
+	</body>
+</html>
