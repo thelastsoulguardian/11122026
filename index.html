@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>As I've Wr13ten...</title>
+		<link rel="icon" type="image/png" href="Icon_Tab.png">
+		<link rel="stylesheet" href="style_as_i_have_written.css">		
+	</head>
+	<body>
+		<div class="vhs-static"></div>
+		<center>
+				<h1>11122026<span class="cursorSeeyouTomorrow">_</span>
+				</h1>	
+
+
+			<div class="large-separation"></div>
+
+			<div id="countdown">
+			<h3> <span id="days">0</span> Days </h3>
+			<h3> <span id="hours">0</span> Hours </h3>
+			<h3> <span id="minutes">0</span> Minutes </h3>
+			<h3> <span id="seconds">0</span> Seconds </h3>
+			</div>
+			<script src="countdown.js"></script>
+
+
+			<div class="large-separation"></div>
+
+
+			<input type="text" class="input-box" id="codeInput" placeholder="Enter the code..." 
+				style="padding:10px; width:250px; font-size:16px;">
+			<button onclick="verifyCode()" style="padding:10px 20px; font-size:16px;">Sent</button>
+			<script>
+				function verifyCode() {
+				const input = document.getElementById("codeInput").value.trim();
+				if (input === "Dark Night of the Soul") {
+				window.location.href = "Secret.html";
+					} else {
+						alert("Wrong Code");
+					}
+				}
+			</script>
+			
+			
+			
+		</center>
+			<audio id="morse-audio" preload="auto" loop>
+				<source src="NewPage-Cdk3jmGc.mp3" type="audio/mpeg">
+			</audio>
+		<script>
+    			window.addEventListener("click", () => {
+       			document.getElementById("morse-audio").play();
+   			});
+		</script>
+	</body>
+</html>
